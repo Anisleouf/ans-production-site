@@ -1,10 +1,13 @@
 
+# ANS PRODUCTION - PAGES CMS 2.2
+
 media:
   input: assets/uploads
   output: /assets/uploads
   extensions: [jpg, jpeg, png, webp]
 
 content:
+  # ACTUALITES
   - name: actualites
     label: Actualités ANS Production
     type: collection
@@ -18,6 +21,7 @@ content:
         label: Article
         type: rich-text
 
+  # JEUX
   - name: jeux
     label: Nos jeux
     type: collection
@@ -34,6 +38,7 @@ content:
         label: Image du jeu
         type: image
 
+  # PERSONNALISATION
   - name: reglages
     label: Personnaliser le site
     type: file
@@ -42,6 +47,8 @@ content:
     operations:
       delete: false
     fields:
+
+      # COULEURS
       - name: themeColor
         label: COULEURS - Couleur principale
         type: select
@@ -83,193 +90,94 @@ content:
             - {name: moderne, label: Moderne}
             - {name: classique, label: Classique}
 
-      - name: logoImage
-        label: IMAGES - Logo du menu
-        type: image
-      - name: heroImage
-        label: IMAGES - Grande bannière accueil
-        type: image
-      - name: homeCharacterImage
-        label: IMAGES - Personnage de l'accueil
-        type: image
-      - name: featureBannerImage
-        label: IMAGES - Bannière Another Day accueil
-        type: image
-      - name: gameHeroImage
-        label: IMAGES - Bannière page Another Day
-        type: image
-      - name: gameCardImage
-        label: IMAGES - Image carte Nos jeux
-        type: image
-      - name: studioLogoImage
-        label: IMAGES - Logo page Studio
-        type: image
-      - name: studioBannerImage
-        label: IMAGES - Grande image page Studio
-        type: image
-      - name: bedroomImage
-        label: IMAGES - Chambre
-        type: image
-      - name: streetImage
-        label: IMAGES - Rue
-        type: image
+      # IMAGES
+      - {name: logoImage, label: IMAGES - Logo du menu, type: image}
+      - {name: heroImage, label: IMAGES - Bannière accueil, type: image}
+      - {name: homeCharacterImage, label: IMAGES - Personnage accueil, type: image}
+      - {name: featureBannerImage, label: IMAGES - Bannière Another Day, type: image}
+      - {name: gameHeroImage, label: IMAGES - Bannière page jeu, type: image}
+      - {name: gameCardImage, label: IMAGES - Carte du jeu, type: image}
+      - {name: studioLogoImage, label: IMAGES - Logo Studio, type: image}
+      - {name: studioBannerImage, label: IMAGES - Bannière Studio, type: image}
+      - {name: bedroomImage, label: IMAGES - Chambre, type: image}
+      - {name: streetImage, label: IMAGES - Rue, type: image}
 
-      - name: homeTitle1
-        label: ACCUEIL - Grand titre ligne 1
-        type: string
-      - name: homeTitle2
-        label: ACCUEIL - Grand titre ligne 2
-        type: string
-      - name: homeTitle3
-        label: ACCUEIL - Grand titre ligne 3
-        type: string
-      - name: homeKicker
-        label: ACCUEIL - Petit texte au-dessus du titre
-        type: string
-      - name: homeIntro
-        label: ACCUEIL - Description
-        type: text
-      - name: homeButtonText
-        label: ACCUEIL - Texte du bouton
-        type: string
+      # PAGE ACCUEIL
+      - {name: homeTitle1, label: ACCUEIL - Grand titre ligne 1, type: string}
+      - {name: homeTitle2, label: ACCUEIL - Grand titre ligne 2, type: string}
+      - {name: homeTitle3, label: ACCUEIL - Grand titre ligne 3, type: string}
+      - {name: homeKicker, label: ACCUEIL - Petit titre, type: string}
+      - {name: homeIntro, label: ACCUEIL - Description, type: text}
+      - {name: homeButtonText, label: ACCUEIL - Texte bouton, type: string}
+
       - name: homeButtonPage
-        label: ACCUEIL - Destination du bouton
+        label: ACCUEIL - Destination bouton
         type: select
         options:
           values:
-            - {name: 'another-day.html', label: Another Day}
-            - {name: 'jeux.html', label: Nos jeux}
-            - {name: 'studio.html', label: Le studio}
-            - {name: 'actualites.html', label: Actualités}
+            - {name: "another-day.html", label: Another Day}
+            - {name: "jeux.html", label: Nos jeux}
+            - {name: "studio.html", label: Le studio}
+            - {name: "actualites.html", label: Actualités}
 
-      - name: featureTitle1
-        label: ACCUEIL - Titre du jeu ligne 1
-        type: string
-      - name: featureTitle2
-        label: ACCUEIL - Titre du jeu ligne 2
-        type: string
-      - name: featuredIntro
-        label: ACCUEIL - Présentation du jeu
-        type: text
+      - {name: featureTitle1, label: ACCUEIL - Jeu titre 1, type: string}
+      - {name: featureTitle2, label: ACCUEIL - Jeu titre 2, type: string}
+      - {name: featuredIntro, label: ACCUEIL - Présentation du jeu, type: text}
 
-      - name: studioStory
-        label: STUDIO - Présentation
-        type: text
-      - name: studioTitle1
-        label: STUDIO - Titre ligne 1
-        type: string
-      - name: studioTitle2
-        label: STUDIO - Titre ligne 2
-        type: string
+      # STUDIO
+      - {name: studioStory, label: STUDIO - Présentation, type: text}
+      - {name: studioTitle1, label: STUDIO - Titre ligne 1, type: string}
+      - {name: studioTitle2, label: STUDIO - Titre ligne 2, type: string}
 
-      - name: gameStatus
-        label: JEU - État du développement
-        type: string
-      - name: publicVersion
-        label: JEU - Version publique
-        type: string
-      - name: platform
-        label: JEU - Plateforme
-        type: string
-      - name: gameSectionTitle1
-        label: JEU - Titre histoire ligne 1
-        type: string
-      - name: gameSectionTitle2
-        label: JEU - Titre histoire ligne 2
-        type: string
+      # ANOTHER DAY
+      - {name: gameStatus, label: JEU - État du développement, type: string}
+      - {name: publicVersion, label: JEU - Version publique, type: string}
+      - {name: platform, label: JEU - Plateforme, type: string}
+      - {name: gameSectionTitle1, label: JEU - Histoire titre 1, type: string}
+      - {name: gameSectionTitle2, label: JEU - Histoire titre 2, type: string}
+      - {name: trailerUrl, label: JEU - Bande-annonce, type: string}
+      - {name: downloadUrl, label: JEU - Téléchargement, type: string}
 
-      - name: footerTitle1
-        label: PIED DE PAGE - Titre ligne 1
-        type: string
-      - name: footerTitle2
-        label: PIED DE PAGE - Titre ligne 2
-        type: string
-      - name: footerCaption
-        label: PIED DE PAGE - Slogan du bas
-        type: string
+      # PIED DE PAGE
+      - {name: footerTitle1, label: PIED DE PAGE - Titre 1, type: string}
+      - {name: footerTitle2, label: PIED DE PAGE - Titre 2, type: string}
+      - {name: footerCaption, label: PIED DE PAGE - Slogan, type: string}
 
-      - name: navHomeText
-        label: MENU - Nom Accueil
-        type: string
-      - name: navGameText
-        label: MENU - Nom Le jeu
-        type: string
-      - name: navVisualsText
-        label: MENU - Nom Univers
-        type: string
-      - name: navStudioText
-        label: MENU - Nom Studio
-        type: string
-      - name: navJournalText
-        label: MENU - Nom Journal
-        type: string
-      - name: navContactText
-        label: MENU - Nom Contact
-        type: string
+      # MENU
+      - {name: navHomeText, label: MENU - Accueil, type: string}
+      - {name: navGameText, label: MENU - Le jeu, type: string}
+      - {name: navVisualsText, label: MENU - Univers, type: string}
+      - {name: navStudioText, label: MENU - Studio, type: string}
+      - {name: navJournalText, label: MENU - Journal, type: string}
+      - {name: navContactText, label: MENU - Contact, type: string}
 
-      - name: showNavHome
-        label: MENU - Afficher Accueil
-        type: boolean
-        default: true
-      - name: showNavGame
-        label: MENU - Afficher Le jeu
-        type: boolean
-        default: true
-      - name: showNavVisuals
-        label: MENU - Afficher Univers
-        type: boolean
-        default: true
-      - name: showNavStudio
-        label: MENU - Afficher Studio
-        type: boolean
-        default: true
-      - name: showNavJournal
-        label: MENU - Afficher Journal
-        type: boolean
-        default: true
-      - name: showNavContact
-        label: MENU - Afficher Contact
-        type: boolean
-        default: true
+      # VISIBILITE DU MENU
+      - {name: showNavHome, label: MENU - Afficher Accueil, type: boolean, default: true}
+      - {name: showNavGame, label: MENU - Afficher Jeu, type: boolean, default: true}
+      - {name: showNavVisuals, label: MENU - Afficher Univers, type: boolean, default: true}
+      - {name: showNavStudio, label: MENU - Afficher Studio, type: boolean, default: true}
+      - {name: showNavJournal, label: MENU - Afficher Journal, type: boolean, default: true}
+      - {name: showNavContact, label: MENU - Afficher Contact, type: boolean, default: true}
 
-      - name: showHero
-        label: SECTIONS - Grande bannière accueil
-        type: boolean
-        default: true
-      - name: showTicker
-        label: SECTIONS - Bande défilante
-        type: boolean
-        default: true
-      - name: showManifesto
-        label: SECTIONS - Notre philosophie
-        type: boolean
-        default: true
-      - name: showFeaturedGame
-        label: SECTIONS - Premier univers
-        type: boolean
-        default: true
-      - name: showFeelings
-        label: SECTIONS - Émotions d'Hugo
-        type: boolean
-        default: true
-      - name: showGallery
-        label: SECTIONS - Galerie accueil
-        type: boolean
-        default: true
-      - name: showEnding
-        label: SECTIONS - Bande de conclusion
-        type: boolean
-        default: true
+      # SECTIONS
+      - {name: showHero, label: SECTIONS - Grande bannière, type: boolean, default: true}
+      - {name: showTicker, label: SECTIONS - Bande défilante, type: boolean, default: true}
+      - {name: showManifesto, label: SECTIONS - Philosophie, type: boolean, default: true}
+      - {name: showFeaturedGame, label: SECTIONS - Premier univers, type: boolean, default: true}
+      - {name: showFeelings, label: SECTIONS - Émotions Hugo, type: boolean, default: true}
+      - {name: showGallery, label: SECTIONS - Galerie accueil, type: boolean, default: true}
+      - {name: showEnding, label: SECTIONS - Conclusion, type: boolean, default: true}
+
+      # CONTACT - FORMULAIRE REEL
+      - name: contactEndpoint
+        label: CONTACT - Réception des vrais messages
+        type: string
+        default: "https://formspree.io/f/mjyyjyno"
+        required: true
 
       - name: contactNotice
         label: CONTACT - Message de contact
         type: text
-      - name: trailerUrl
-        label: JEU - Lien de bande-annonce
-        type: string
-      - name: downloadUrl
-        label: JEU - Lien de téléchargement
-        type: string
 
 settings:
   content:
