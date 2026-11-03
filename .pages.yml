@@ -31,27 +31,28 @@ content:
         label: Image du jeu
         type: image
 
-
   - name: reglages
     label: Personnaliser le site
     type: file
     path: content/site.json
     format: json
+    operations:
+      delete: false
     fields:
       - name: homeIntro
         label: Texte de l'accueil
         type: text
 
       - name: featuredIntro
-        label: Presentation Another Day
+        label: Présentation Another Day
         type: text
 
       - name: studioStory
-        label: Presentation du studio
+        label: Présentation du studio
         type: text
 
       - name: gameStatus
-        label: Etat du jeu
+        label: État du jeu
         type: string
 
       - name: publicVersion
@@ -62,6 +63,20 @@ content:
         label: Plateforme du jeu
         type: string
 
+      - name: themeColor
+        label: Couleur principale du site
+        type: select
+        options:
+          values:
+            - name: orange
+              label: Orange original
+            - name: bleu
+              label: Bleu nuit
+            - name: violet
+              label: Violet
+            - name: vert
+              label: Vert
+
       - name: contactNotice
         label: Message de contact
         type: text
@@ -71,7 +86,7 @@ content:
         type: string
 
       - name: downloadUrl
-        label: Lien de telechargement
+        label: Lien de téléchargement
         type: string
 
 settings:
