@@ -1,0 +1,32 @@
+
+media: media
+
+content:
+  - name: actualites
+    label: Actualités ANS Production
+    type: collection
+    path: content/actualites
+    fields:
+      - name: title
+        label: Titre
+        type: string
+        required: true
+      - name: body
+        label: Article
+        type: rich-text
+
+  - name: jeux
+    label: Nos jeux
+    type: collection
+    path: content/jeux
+    fields:
+      - name: title
+        label: Nom du jeu
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: rich-text
+      - name: image
+        label: Image du jeu
+        type: image
