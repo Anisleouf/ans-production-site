@@ -20,5 +20,6 @@
   "streetImage": "assets/another-day/05_rue_soir.jpg",
   "kitchenImage": "assets/another-day/14_cuisine.jpg",
   "dialogueImage": "assets/another-day/09_salle_de_classe.jpg",
-  "charactersImage": "assets/another-day/07_college_exterieur.jpg"
+  "charactersImage": "assets/another-day/07_college_exterieur.jpg",
+  "themeColor": "bleu"
 }
