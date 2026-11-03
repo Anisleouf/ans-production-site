@@ -30,3 +30,50 @@ content:
       - name: image
         label: Image du jeu
         type: image
+
+
+  - name: reglages
+    label: Personnaliser le site
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: homeIntro
+        label: Texte de l'accueil
+        type: text
+
+      - name: featuredIntro
+        label: Presentation Another Day
+        type: text
+
+      - name: studioStory
+        label: Presentation du studio
+        type: text
+
+      - name: gameStatus
+        label: Etat du jeu
+        type: string
+
+      - name: publicVersion
+        label: Version publique
+        type: string
+
+      - name: platform
+        label: Plateforme du jeu
+        type: string
+
+      - name: contactNotice
+        label: Message de contact
+        type: text
+
+      - name: trailerUrl
+        label: Lien bande-annonce
+        type: string
+
+      - name: downloadUrl
+        label: Lien de telechargement
+        type: string
+
+settings:
+  content:
+    merge: true
