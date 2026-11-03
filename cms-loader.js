@@ -91,6 +91,27 @@
       && !Array.isArray(data.site) ? data.site : {};
 
     const cmsNews = await loadCMSNews();
+    
+    let cmsGame = {};
+    try {
+      const api = "https://api.github.com/repos/Anisleouf/ans-production-site/contents/content/jeux?ref=main";
+      const response = await fetch(api);
+      if (response.ok) {
+        const files = await response.json();
+        const game = files.find(f => f.name.toLowerCase().includes("another-day") && f.name.endsWith(".md"));
+        if (game) {
+          const raw = await fetch(game.download_url).then(r => r.text());
+          const front = raw.match(/^---\s*\n([\s\S]*?)\n---/);
+          const description = front?.[1].match(/^description:\s*(.+)$/m);
+          if (description) {
+            cmsGame.gameIntro = description[1].replace(/^["']|["']$/g, "");
+          }
+        }
+      }
+    } catch (e) {
+      console.warn("Chargement du jeu impossible", e);
+    }
+
 
     window.ANS_CONFIG = {
       ...backup,
