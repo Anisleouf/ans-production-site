@@ -116,6 +116,7 @@
     window.ANS_CONFIG = {
       ...backup,
       ...site,
+        ...cmsGame,
       news: [...cmsNews, ...(Array.isArray(data.news) ? data.news : [])],
       archives: Array.isArray(data.archives) ? data.archives : [],
       gallery: Array.isArray(data.gallery) ? data.gallery : backup.gallery || [],
