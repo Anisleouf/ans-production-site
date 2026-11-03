@@ -1,12 +1,106 @@
-/* Load editable JSON on a hosted website, preserve local index.html preview. */
-(()=>{
- 'use strict';
- const backup=window.ANS_CONFIG||{};
- const paths=[['site','content/site.json',{}],['news','content/actualites.json',backup.news||[]],['archives','content/archives.json',backup.archives||[]],['gallery','content/galerie.json',backup.gallery||[]],['scenes','content/visuels.json',backup.scenes||[]]];
- const start=()=>{const s=document.createElement('script');s.src='app.js';s.defer=true;s.onerror=()=>{const p=document.createElement('p');p.textContent='Le fichier app.js manque. Vérifie ton dossier de site.';document.getElementById('app')?.append(p)};document.head.append(s)};
- if(location.protocol==='file:'){start();return;}
- Promise.all(paths.map(async([k,path,fallback])=>{try{const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw Error(`${r.status}`);return[k,await r.json()]}catch(e){console.warn('ANS Production: secours pour '+path,e);return[k,fallback]}})).then(values=>{
-  const data=Object.fromEntries(values);const rawSite=data.site&&typeof data.site==='object'&&!Array.isArray(data.site)?data.site:{};
-  window.ANS_CONFIG={...backup,...rawSite,news:Array.isArray(data.news)?data.news:[],archives:Array.isArray(data.archives)?data.archives:[],gallery:Array.isArray(data.gallery)?data.gallery:backup.gallery||[],scenes:Array.isArray(data.scenes)?data.scenes:backup.scenes||[]};
- }).finally(start);
+
+/* ANS Production - Pages CMS */
+(() => {
+  "use strict";
+
+  const backup = window.ANS_CONFIG || {};
+
+  const paths = [
+    ["site", "content/site.json", {}],
+    ["news", "content/actualites.json", backup.news || []],
+    ["archives", "content/archives.json", backup.archives || []],
+    ["gallery", "content/galerie.json", backup.gallery || []],
+    ["scenes", "content/visuels.json", backup.scenes || []]
+  ];
+
+  const start = () => {
+    const script = document.createElement("script");
+    script.src = "app.js";
+    script.onerror = () => console.error("app.js introuvable");
+    document.head.append(script);
+  };
+
+  if (location.protocol === "file:") {
+    start();
+    return;
+  }
+
+  async function loadJSON(path, fallback) {
+    try {
+      const response = await fetch(path, {cache: "no-store"});
+      if (!response.ok) return fallback;
+      return await response.json();
+    } catch {
+      return fallback;
+    }
+  }
+
+  function parseMarkdown(source, filename) {
+    const match = source.match(/^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)/);
+    const metadata = match ? match[1] : "";
+    const body = match ? match[2] : source;
+
+    const title = metadata.match(/^title:\s*(.+)$/m)?.[1] || filename;
+    const date = metadata.match(/^date:\s*(.+)$/m)?.[1]
+      || filename.match(/^\d{4}-\d{2}-\d{2}/)?.[0]
+      || "";
+
+    return {
+      title: title.replace(/^["']|["']$/g, ""),
+      date,
+      type: "Actualité",
+      text: body.replace(/[#*_>`]/g, "").trim().slice(0, 1200)
+    };
+  }
+
+  async function loadCMSNews() {
+    const api = "https://api.github.com/repos/Anisleouf/ans-production-site/contents/content/actualites?ref=main";
+
+    try {
+      const response = await fetch(api, {cache: "no-store"});
+      if (!response.ok) return [];
+
+      const files = await response.json();
+      if (!Array.isArray(files)) return [];
+
+      const articles = await Promise.all(
+        files.filter(f => f.name.endsWith(".md"))
+          .map(async f => {
+            const r = await fetch(f.download_url);
+            if (!r.ok) return null;
+            return parseMarkdown(await r.text(), f.name);
+          })
+      );
+
+      return articles.filter(Boolean)
+        .sort((a, b) => b.date.localeCompare(a.date));
+    } catch (error) {
+      console.warn("Pages CMS temporairement indisponible", error);
+      return [];
+    }
+  }
+
+  async function initialize() {
+    const values = await Promise.all(
+      paths.map(async ([key, path, fallback]) =>
+        [key, await loadJSON(path, fallback)])
+    );
+
+    const data = Object.fromEntries(values);
+    const site = data.site && typeof data.site === "object"
+      && !Array.isArray(data.site) ? data.site : {};
+
+    const cmsNews = await loadCMSNews();
+
+    window.ANS_CONFIG = {
+      ...backup,
+      ...site,
+      news: [...cmsNews, ...(Array.isArray(data.news) ? data.news : [])],
+      archives: Array.isArray(data.archives) ? data.archives : [],
+      gallery: Array.isArray(data.gallery) ? data.gallery : backup.gallery || [],
+      scenes: Array.isArray(data.scenes) ? data.scenes : backup.scenes || []
+    };
+  }
+
+  initialize().catch(console.error).finally(start);
 })();
