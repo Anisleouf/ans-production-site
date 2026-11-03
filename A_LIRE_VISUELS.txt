@@ -1,0 +1,8 @@
+ANS PRODUCTION — VRAIS VISUELS ANOTHER DAY
+
+Double-cliquez sur index.html et ouvrez la page Another Day. Cliquez sur « Voir les personnages dans les décors ».
+Vous pouvez aussi ouvrir visuels-du-jeu.html directement.
+
+Les huit compositions affichent les décors authentiques du site et les vrais portraits du correctif Unity 1.6.1 (sans modification des images). Il ne s’agit PAS de captures de gameplay : pour cela il faut prendre de vraies captures depuis Unity/RELEASE.
+
+Le fichier ORIGINE_DES_VISUELS.json conserve des empreintes SHA256 des fichiers d’origine.

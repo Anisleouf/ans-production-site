@@ -1,0 +1,214 @@
+{
+  "archive_source": "AnotherDay_1_5_30_DEV_COMPLET_Reconstitue.zip",
+  "precision_importante": "Visuels exacts provenant des Assets d’une reconstruction du projet 1.5.30; ne sont pas des captures d’écran de gameplay. Il faut capturer la RELEASE actuelle dans Unity pour de vraies images de jeu.",
+  "fichiers": [
+    {
+      "nom": "Menu au coucher du soleil",
+      "source_dans_Unity": "AnotherDay_1_5_DEV/Assets/AnotherDay/Resources/MenuNative/sunset.png",
+      "origine_jeu_sha256": "cd8ee9c05b3add379222913dd09930ef7c31c3c3fbd9a1bac8ca46652c6983e8",
+      "taille_originale": [
+        1920,
+        1080
+      ],
+      "original": "01_ORIGINAUX_EXTRAITS_DU_JEU/01_menu_crepuscule.png",
+      "format_site": "02_FORMAT_SITE_16x9_CADRAGE_SEUL/01_menu_crepuscule.jpg",
+      "type": "Ressource graphique extraite du projet Unity, PAS une capture d’une partie exécutée",
+      "modifications_du_format_site": "recadrage central 16:9 et conversion JPEG, aucun élément ajouté"
+    },
+    {
+      "nom": "Menu de nuit",
+      "source_dans_Unity": "AnotherDay_1_5_DEV/Assets/AnotherDay/Resources/MenuNative/night.png",
+      "origine_jeu_sha256": "9163af318e1125fc0348da9d16321abfff9e8d6da00ff7453e74a362e920465a",
+      "taille_originale": [
+        1920,
+        1080
+      ],
+      "original": "01_ORIGINAUX_EXTRAITS_DU_JEU/02_menu_nuit.png",
+      "format_site": "02_FORMAT_SITE_16x9_CADRAGE_SEUL/02_menu_nuit.jpg",
+      "type": "Ressource graphique extraite du projet Unity, PAS une capture d’une partie exécutée",
+      "modifications_du_format_site": "recadrage central 16:9 et conversion JPEG, aucun élément ajouté"
+    },
+    {
+      "nom": "Chambre de Hugo",
+      "source_dans_Unity": "AnotherDay_1_5_DEV/Assets/AnotherDay/Resources/Art/bedroom.png",
+      "origine_jeu_sha256": "0c8af0f6969c7ac43c2aa6571cdaafa00982d0a73113d34b4895ba9fdff4154b",
+      "taille_originale": [
+        3200,
+        1080
+      ],
+      "original": "01_ORIGINAUX_EXTRAITS_DU_JEU/03_chambre_hugo.png",
+      "format_site": "02_FORMAT_SITE_16x9_CADRAGE_SEUL/03_chambre_hugo.jpg",
+      "type": "Ressource graphique extraite du projet Unity, PAS une capture d’une partie exécutée",
+      "modifications_du_format_site": "recadrage central 16:9 et conversion JPEG, aucun élément ajouté"
+    },
+    {
+      "nom": "Chambre au matin",
+      "source_dans_Unity": "AnotherDay_1_5_DEV/Assets/AnotherDay/Resources/Art/bedroom_morning.png",
+      "origine_jeu_sha256": "7b6b38400c1ea444bc13fe6114be3f6b9a21c65aab426a81693c0cd46c8af3c0",
+      "taille_originale": [
+        3200,
+        1080
+      ],
+      "original": "01_ORIGINAUX_EXTRAITS_DU_JEU/04_chambre_matin.png",
+      "format_site": "02_FORMAT_SITE_16x9_CADRAGE_SEUL/04_chambre_matin.jpg",
+      "type": "Ressource graphique extraite du projet Unity, PAS une capture d’une partie exécutée",
+      "modifications_du_format_site": "recadrage central 16:9 et conversion JPEG, aucun élément ajouté"
+    },
+    {
+      "nom": "Rue en soirée",
+      "source_dans_Unity": "AnotherDay_1_5_DEV/Assets/AnotherDay/Resources/Art/street.png",
+      "origine_jeu_sha256": "c5915974e0dd3d0ba7731664f2fbc0bc291d5c4315675ee8f7bf1ac6cd2589aa",
+      "taille_originale": [
+        3200,
+        1080
+      ],
+      "original": "01_ORIGINAUX_EXTRAITS_DU_JEU/05_rue_soir.png",
+      "format_site": "02_FORMAT_SITE_16x9_CADRAGE_SEUL/05_rue_soir.jpg",
+      "type": "Ressource graphique extraite du projet Unity, PAS une capture d’une partie exécutée",
+      "modifications_du_format_site": "recadrage central 16:9 et conversion JPEG, aucun élément ajouté"
+    },
+    {
+      "nom": "Rue après la pluie",
+      "source_dans_Unity": "AnotherDay_1_5_DEV/Assets/AnotherDay/Resources/Art/street_wet.png",
+      "origine_jeu_sha256": "7feb40afaeb1ea74a120d3375e894abd946dfa4fd6d80fe0aeca8eb9dd6ae8c0",
+      "taille_originale": [
+        3200,
+        1080
+      ],
+      "original": "01_ORIGINAUX_EXTRAITS_DU_JEU/06_rue_pluie.png",
+      "format_site": "02_FORMAT_SITE_16x9_CADRAGE_SEUL/06_rue_pluie.jpg",
+      "type": "Ressource graphique extraite du projet Unity, PAS une capture d’une partie exécutée",
+      "modifications_du_format_site": "recadrage central 16:9 et conversion JPEG, aucun élément ajouté"
+    },
+    {
+      "nom": "Collège extérieur",
+      "source_dans_Unity": "AnotherDay_1_5_DEV/Assets/AnotherDay/Resources/Art/school.png",
+      "origine_jeu_sha256": "f2ad53a5bde7952511d9972757ad4e9ffa0e9c57db96f5babccb55e64c6c0529",
+      "taille_originale": [
+        3200,
+        1080
+      ],
+      "original": "01_ORIGINAUX_EXTRAITS_DU_JEU/07_college_exterieur.png",
+      "format_site": "02_FORMAT_SITE_16x9_CADRAGE_SEUL/07_college_exterieur.jpg",
+      "type": "Ressource graphique extraite du projet Unity, PAS une capture d’une partie exécutée",
+      "modifications_du_format_site": "recadrage central 16:9 et conversion JPEG, aucun élément ajouté"
+    },
+    {
+      "nom": "Collège au matin",
+      "source_dans_Unity": "AnotherDay_1_5_DEV/Assets/AnotherDay/Resources/Art/school_morning.png",
+      "origine_jeu_sha256": "eef9ebd40877f460a9b90aa9144ee91ff6ed2fc42f5e6613bf9a07f36299ce71",
+      "taille_originale": [
+        3200,
+        1080
+      ],
+      "original": "01_ORIGINAUX_EXTRAITS_DU_JEU/08_college_matin.png",
+      "format_site": "02_FORMAT_SITE_16x9_CADRAGE_SEUL/08_college_matin.jpg",
+      "type": "Ressource graphique extraite du projet Unity, PAS une capture d’une partie exécutée",
+      "modifications_du_format_site": "recadrage central 16:9 et conversion JPEG, aucun élément ajouté"
+    },
+    {
+      "nom": "Salle de classe",
+      "source_dans_Unity": "AnotherDay_1_5_DEV/Assets/AnotherDay/Resources/Art/classroom.png",
+      "origine_jeu_sha256": "61744964ed144733b3683a8008a87ccf4b304ff9d124cc824464289c080bb567",
+      "taille_originale": [
+        3200,
+        1080
+      ],
+      "original": "01_ORIGINAUX_EXTRAITS_DU_JEU/09_salle_de_classe.png",
+      "format_site": "02_FORMAT_SITE_16x9_CADRAGE_SEUL/09_salle_de_classe.jpg",
+      "type": "Ressource graphique extraite du projet Unity, PAS une capture d’une partie exécutée",
+      "modifications_du_format_site": "recadrage central 16:9 et conversion JPEG, aucun élément ajouté"
+    },
+    {
+      "nom": "Bibliothèque du collège",
+      "source_dans_Unity": "AnotherDay_1_5_DEV/Assets/AnotherDay/Resources/Art/school_library.png",
+      "origine_jeu_sha256": "acd96d56a9485bd5825a446de19637479e44b7cd46dc386a73f29365c1b998c5",
+      "taille_originale": [
+        3200,
+        1080
+      ],
+      "original": "01_ORIGINAUX_EXTRAITS_DU_JEU/10_bibliotheque.png",
+      "format_site": "02_FORMAT_SITE_16x9_CADRAGE_SEUL/10_bibliotheque.jpg",
+      "type": "Ressource graphique extraite du projet Unity, PAS une capture d’une partie exécutée",
+      "modifications_du_format_site": "recadrage central 16:9 et conversion JPEG, aucun élément ajouté"
+    },
+    {
+      "nom": "Parc",
+      "source_dans_Unity": "AnotherDay_1_5_DEV/Assets/AnotherDay/Resources/Art/park.png",
+      "origine_jeu_sha256": "529dfd5e866a50aa9f39633715f562a805c8ed7cf7b5e4f49a3462e67ee85b4b",
+      "taille_originale": [
+        3200,
+        1080
+      ],
+      "original": "01_ORIGINAUX_EXTRAITS_DU_JEU/11_parc.png",
+      "format_site": "02_FORMAT_SITE_16x9_CADRAGE_SEUL/11_parc.jpg",
+      "type": "Ressource graphique extraite du projet Unity, PAS une capture d’une partie exécutée",
+      "modifications_du_format_site": "recadrage central 16:9 et conversion JPEG, aucun élément ajouté"
+    },
+    {
+      "nom": "Arrêt de bus",
+      "source_dans_Unity": "AnotherDay_1_5_DEV/Assets/AnotherDay/Resources/Art/busstop.png",
+      "origine_jeu_sha256": "1a2e7bf9a3e42eb23149c239456a0bb75e3f9017723cd33f68404816abb21011",
+      "taille_originale": [
+        3200,
+        1080
+      ],
+      "original": "01_ORIGINAUX_EXTRAITS_DU_JEU/12_arret_de_bus.png",
+      "format_site": "02_FORMAT_SITE_16x9_CADRAGE_SEUL/12_arret_de_bus.jpg",
+      "type": "Ressource graphique extraite du projet Unity, PAS une capture d’une partie exécutée",
+      "modifications_du_format_site": "recadrage central 16:9 et conversion JPEG, aucun élément ajouté"
+    },
+    {
+      "nom": "Salon",
+      "source_dans_Unity": "AnotherDay_1_5_DEV/Assets/AnotherDay/Resources/Art/living.png",
+      "origine_jeu_sha256": "a9a170197771a0a6edf349025f35a98ed99ca2d3b5313f986b856ba55e389e48",
+      "taille_originale": [
+        3200,
+        1080
+      ],
+      "original": "01_ORIGINAUX_EXTRAITS_DU_JEU/13_salon.png",
+      "format_site": "02_FORMAT_SITE_16x9_CADRAGE_SEUL/13_salon.jpg",
+      "type": "Ressource graphique extraite du projet Unity, PAS une capture d’une partie exécutée",
+      "modifications_du_format_site": "recadrage central 16:9 et conversion JPEG, aucun élément ajouté"
+    },
+    {
+      "nom": "Cuisine",
+      "source_dans_Unity": "AnotherDay_1_5_DEV/Assets/AnotherDay/Resources/Art/kitchen.png",
+      "origine_jeu_sha256": "5a99f47a132c86673a7127cbce8f9f4993213971a53faca9e42e595466fc37bc",
+      "taille_originale": [
+        3200,
+        1080
+      ],
+      "original": "01_ORIGINAUX_EXTRAITS_DU_JEU/14_cuisine.png",
+      "format_site": "02_FORMAT_SITE_16x9_CADRAGE_SEUL/14_cuisine.jpg",
+      "type": "Ressource graphique extraite du projet Unity, PAS une capture d’une partie exécutée",
+      "modifications_du_format_site": "recadrage central 16:9 et conversion JPEG, aucun élément ajouté"
+    },
+    {
+      "nom": "Cantine du collège",
+      "source_dans_Unity": "AnotherDay_1_5_DEV/Assets/AnotherDay/Resources/Art/canteen.png",
+      "origine_jeu_sha256": "bd8f5f3135fe3c773d8520ad314aba527463240e3afd53741972f7290ba3bf3c",
+      "taille_originale": [
+        3200,
+        1080
+      ],
+      "original": "01_ORIGINAUX_EXTRAITS_DU_JEU/15_cantine.png",
+      "format_site": "02_FORMAT_SITE_16x9_CADRAGE_SEUL/15_cantine.jpg",
+      "type": "Ressource graphique extraite du projet Unity, PAS une capture d’une partie exécutée",
+      "modifications_du_format_site": "recadrage central 16:9 et conversion JPEG, aucun élément ajouté"
+    },
+    {
+      "nom": "Intérieur du bus",
+      "source_dans_Unity": "AnotherDay_1_5_DEV/Assets/AnotherDay/Resources/Art/bus.png",
+      "origine_jeu_sha256": "3e92e6beabdd2dba0fd8057497d0bf31c21d9e2995bd729aa8f7bff433112347",
+      "taille_originale": [
+        3200,
+        1080
+      ],
+      "original": "01_ORIGINAUX_EXTRAITS_DU_JEU/16_bus.png",
+      "format_site": "02_FORMAT_SITE_16x9_CADRAGE_SEUL/16_bus.jpg",
+      "type": "Ressource graphique extraite du projet Unity, PAS une capture d’une partie exécutée",
+      "modifications_du_format_site": "recadrage central 16:9 et conversion JPEG, aucun élément ajouté"
+    }
+  ]
+}

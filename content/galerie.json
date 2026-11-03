@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Menu au coucher du soleil",
+    "image": "assets/another-day/01_menu_crepuscule.jpg",
+    "type": "Décor original du jeu"
+  },
+  {
+    "title": "Menu de nuit",
+    "image": "assets/another-day/02_menu_nuit.jpg",
+    "type": "Décor original du jeu"
+  },
+  {
+    "title": "Chambre de Hugo",
+    "image": "assets/another-day/03_chambre_hugo.jpg",
+    "type": "Décor original du jeu"
+  },
+  {
+    "title": "Chambre au matin",
+    "image": "assets/another-day/04_chambre_matin.jpg",
+    "type": "Décor original du jeu"
+  },
+  {
+    "title": "Rue en soirée",
+    "image": "assets/another-day/05_rue_soir.jpg",
+    "type": "Décor original du jeu"
+  },
+  {
+    "title": "Rue après la pluie",
+    "image": "assets/another-day/06_rue_pluie.jpg",
+    "type": "Décor original du jeu"
+  },
+  {
+    "title": "Collège extérieur",
+    "image": "assets/another-day/07_college_exterieur.jpg",
+    "type": "Décor original du jeu"
+  },
+  {
+    "title": "Collège au matin",
+    "image": "assets/another-day/08_college_matin.jpg",
+    "type": "Décor original du jeu"
+  },
+  {
+    "title": "Salle de classe",
+    "image": "assets/another-day/09_salle_de_classe.jpg",
+    "type": "Décor original du jeu"
+  },
+  {
+    "title": "Bibliothèque du collège",
+    "image": "assets/another-day/10_bibliotheque.jpg",
+    "type": "Décor original du jeu"
+  },
+  {
+    "title": "Parc",
+    "image": "assets/another-day/11_parc.jpg",
+    "type": "Décor original du jeu"
+  },
+  {
+    "title": "Arrêt de bus",
+    "image": "assets/another-day/12_arret_de_bus.jpg",
+    "type": "Décor original du jeu"
+  },
+  {
+    "title": "Salon",
+    "image": "assets/another-day/13_salon.jpg",
+    "type": "Décor original du jeu"
+  },
+  {
+    "title": "Cuisine",
+    "image": "assets/another-day/14_cuisine.jpg",
+    "type": "Décor original du jeu"
+  },
+  {
+    "title": "Cantine du collège",
+    "image": "assets/another-day/15_cantine.jpg",
+    "type": "Décor original du jeu"
+  },
+  {
+    "title": "Intérieur du bus",
+    "image": "assets/another-day/16_bus.jpg",
+    "type": "Décor original du jeu"
+  }
+]

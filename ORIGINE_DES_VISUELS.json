@@ -1,0 +1,126 @@
+{
+  "type": "Composition HTML par superposition de fichiers sources non modifiés",
+  "avertissement": "Ne pas appeler ces compositions des captures de gameplay",
+  "fichiers": {
+    "assets/another-day/01_menu_crepuscule.jpg": {
+      "source": "site officiel ANS Production v. visuels originaux",
+      "sha256": "c743b14e44a3e23beb304131dcab083336025832f02682d47da7c5628e4485fa"
+    },
+    "assets/another-day/02_menu_nuit.jpg": {
+      "source": "site officiel ANS Production v. visuels originaux",
+      "sha256": "c4c2a59e64dbf758fbb744503ccc02ea13c5ef0eb5129035fca50223b7ef59e4"
+    },
+    "assets/another-day/03_chambre_hugo.jpg": {
+      "source": "site officiel ANS Production v. visuels originaux",
+      "sha256": "73f364ec3067848b9ad8481d9db4f0522f4adafbb00b0fc7c4e7e6e80f99831f"
+    },
+    "assets/another-day/04_chambre_matin.jpg": {
+      "source": "site officiel ANS Production v. visuels originaux",
+      "sha256": "5f75dd5050709d84f4a846a9e100fab9d6ee700b4bbe8d8644a8b26e1815ba66"
+    },
+    "assets/another-day/05_rue_soir.jpg": {
+      "source": "site officiel ANS Production v. visuels originaux",
+      "sha256": "bfad7336cc9fc499ce5e8cea2dcab2250a843441806e14f31bb04207e25dbc37"
+    },
+    "assets/another-day/06_rue_pluie.jpg": {
+      "source": "site officiel ANS Production v. visuels originaux",
+      "sha256": "df8d791b0660a6f263664aaa5523ee2e1da4dba6de87e73f2e279c3344b739e5"
+    },
+    "assets/another-day/07_college_exterieur.jpg": {
+      "source": "site officiel ANS Production v. visuels originaux",
+      "sha256": "5e5bbdddb0f2733987efce70ea4ed7a9d465e466031d3fded115bbd2e0ab27ca"
+    },
+    "assets/another-day/08_college_matin.jpg": {
+      "source": "site officiel ANS Production v. visuels originaux",
+      "sha256": "a9e67cb096239f07466f2422d7dac2a52c90c1bf349cac2eb50b22cd7a497d13"
+    },
+    "assets/another-day/09_salle_de_classe.jpg": {
+      "source": "site officiel ANS Production v. visuels originaux",
+      "sha256": "b95dd2ec4552e57f6bea64566ace8060c687f68171ba784c38211baddacb46b7"
+    },
+    "assets/another-day/10_bibliotheque.jpg": {
+      "source": "site officiel ANS Production v. visuels originaux",
+      "sha256": "d175bd881de5f053fca6425ad8458c51b1b7cd9e5ac7502ccfdcfcd6ea578dcf"
+    },
+    "assets/another-day/11_parc.jpg": {
+      "source": "site officiel ANS Production v. visuels originaux",
+      "sha256": "b135212478234795f633413a0658eab48084f8aaf302ed88939a78518d561fd9"
+    },
+    "assets/another-day/12_arret_de_bus.jpg": {
+      "source": "site officiel ANS Production v. visuels originaux",
+      "sha256": "e40359961a52fc7f551c47429ae15b4f1a632159b94abccb33a4b959002cff38"
+    },
+    "assets/another-day/13_salon.jpg": {
+      "source": "site officiel ANS Production v. visuels originaux",
+      "sha256": "e51f16e1deb33764c53fdc6ea76f06fb1e05344f1fd62ccbbd12abb47b190a97"
+    },
+    "assets/another-day/14_cuisine.jpg": {
+      "source": "site officiel ANS Production v. visuels originaux",
+      "sha256": "e6dc1ac60b77a9b3a17a0282738ca89c19c905d1ba78aa7b04f12756b31f7a60"
+    },
+    "assets/another-day/15_cantine.jpg": {
+      "source": "site officiel ANS Production v. visuels originaux",
+      "sha256": "99b4b393c02f01effac00acdab6d59063378bd0ec580c52ee3b5dd1670770e10"
+    },
+    "assets/another-day/16_bus.jpg": {
+      "source": "site officiel ANS Production v. visuels originaux",
+      "sha256": "92aefbb80c20a49e9873209158393e1f8ac6b29d2d99e3783864d96ef92e97a6"
+    },
+    "assets/personnages-authentiques/hugo_thoughtful.png": {
+      "source": "Another Day 1.6.1 correctif portraits officiels (PNG originaux inchangés)",
+      "sha256": "8fbd6b3eebf6753e38591deea49dc07a1ac14db3eade6bd1fe1e4bb9d5ecac4a"
+    },
+    "assets/personnages-authentiques/hugo_sad.png": {
+      "source": "Another Day 1.6.1 correctif portraits officiels (PNG originaux inchangés)",
+      "sha256": "224bc02a4ee81df66b98a114d4162574747a653378da3f7eff23af20f2e45eae"
+    },
+    "assets/personnages-authentiques/hugo_shy.png": {
+      "source": "Another Day 1.6.1 correctif portraits officiels (PNG originaux inchangés)",
+      "sha256": "5e89f8d7c1a3f4899d0792d0a4dc0a32528c53a388bb2b6ae2f64d91049a49a7"
+    },
+    "assets/personnages-authentiques/hugo_surprised.png": {
+      "source": "Another Day 1.6.1 correctif portraits officiels (PNG originaux inchangés)",
+      "sha256": "a35c5b015f4372292f0d764213c24f3c50e29349e255d4b1ccc0364419d2d5e4"
+    },
+    "assets/personnages-authentiques/hugo_smiling.png": {
+      "source": "Another Day 1.6.1 correctif portraits officiels (PNG originaux inchangés)",
+      "sha256": "40028e7aad26f80f870819757309991905bf5be730ce2c8bc0309190e06e6ece"
+    },
+    "assets/personnages-authentiques/hugo_happy.png": {
+      "source": "Another Day 1.6.1 correctif portraits officiels (PNG originaux inchangés)",
+      "sha256": "5a7dc73185345908f763aaa2fed7a64a5043efa5b4a17c5c30030b57fa3cb36e"
+    },
+    "assets/personnages-authentiques/hugo_determined.png": {
+      "source": "Another Day 1.6.1 correctif portraits officiels (PNG originaux inchangés)",
+      "sha256": "d32b4c453dd1493d6ebfa34e0fd44dab43c2a26879f6f21a3d3ed40e1fba8e14"
+    },
+    "assets/personnages-authentiques/hugo_neutral.png": {
+      "source": "Another Day 1.6.1 correctif portraits officiels (PNG originaux inchangés)",
+      "sha256": "410487945d373999f0ff9adfb5e88fa87795e2f2ee0b1df1d0ebbd5c3127ab52"
+    },
+    "assets/personnages-authentiques/noe_neutral.png": {
+      "source": "Another Day 1.6.1 correctif portraits officiels (PNG originaux inchangés)",
+      "sha256": "f7adb2d5d218f6bc69372096ee4d275967b63c64f588261ec9b80f199d15f2ca"
+    },
+    "assets/personnages-authentiques/eliott_neutral.png": {
+      "source": "Another Day 1.6.1 correctif portraits officiels (PNG originaux inchangés)",
+      "sha256": "af4c51032ce0941bb12a1da24ac284b65cc07f74984a39ca348d808563822da4"
+    },
+    "assets/personnages-authentiques/teacher_neutral.png": {
+      "source": "Another Day 1.6.1 correctif portraits officiels (PNG originaux inchangés)",
+      "sha256": "4720b8047b5a91b5f9462ce6be7762a687fa3a575a443a01732699453c69f683"
+    },
+    "assets/personnages-authentiques/mother_neutral.png": {
+      "source": "Another Day 1.6.1 correctif portraits officiels (PNG originaux inchangés)",
+      "sha256": "de5297275681d633f9d5ca266b72bda971bf90437755073795630add75243cde"
+    },
+    "assets/personnages-authentiques/father_neutral.png": {
+      "source": "Another Day 1.6.1 correctif portraits officiels (PNG originaux inchangés)",
+      "sha256": "2063c0ff271a3eeefe7fa6d9feafbc11ea31ac2080b32c65b9b9f1ab70895ce6"
+    },
+    "assets/personnages-authentiques/baker_neutral.png": {
+      "source": "Another Day 1.6.1 correctif portraits officiels (PNG originaux inchangés)",
+      "sha256": "cee81fa842b9b4275ddf6f3ba8c456bc8c8f054b3eb141a7b9084e7c14a87417"
+    }
+  }
+}

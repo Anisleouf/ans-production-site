@@ -1,0 +1,74 @@
+[
+  {
+    "title": "La chambre",
+    "location": "Chambre d’Hugo",
+    "background": "assets/another-day/03_chambre_hugo.jpg",
+    "emotion": "Pensif",
+    "portrait": "assets/personnages-authentiques/hugo_thoughtful.png",
+    "companion": "",
+    "description": "Un instant de réflexion."
+  },
+  {
+    "title": "Au collège",
+    "location": "Collège au matin",
+    "background": "assets/another-day/08_college_matin.jpg",
+    "emotion": "Gêné",
+    "portrait": "assets/personnages-authentiques/hugo_shy.png",
+    "companion": "assets/personnages-authentiques/noe_neutral.png",
+    "description": "Un échange qui le laisse hésitant."
+  },
+  {
+    "title": "La pluie",
+    "location": "Rue après la pluie",
+    "background": "assets/another-day/06_rue_pluie.jpg",
+    "emotion": "Triste",
+    "portrait": "assets/personnages-authentiques/hugo_sad.png",
+    "companion": "",
+    "description": "Les moments difficiles ont aussi leur place."
+  },
+  {
+    "title": "Le parc",
+    "location": "Parc",
+    "background": "assets/another-day/11_parc.jpg",
+    "emotion": "Heureux",
+    "portrait": "assets/personnages-authentiques/hugo_happy.png",
+    "companion": "assets/personnages-authentiques/noe_neutral.png",
+    "description": "Une parenthèse plus lumineuse."
+  },
+  {
+    "title": "En classe",
+    "location": "Salle de classe",
+    "background": "assets/another-day/09_salle_de_classe.jpg",
+    "emotion": "Déterminé",
+    "portrait": "assets/personnages-authentiques/hugo_determined.png",
+    "companion": "assets/personnages-authentiques/teacher_neutral.png",
+    "description": "L’envie de prendre la parole."
+  },
+  {
+    "title": "Dans le bus",
+    "location": "Intérieur du bus",
+    "background": "assets/another-day/16_bus.jpg",
+    "emotion": "Surpris",
+    "portrait": "assets/personnages-authentiques/hugo_surprised.png",
+    "companion": "",
+    "description": "Quelque chose attire son attention."
+  },
+  {
+    "title": "À la maison",
+    "location": "Cuisine",
+    "background": "assets/another-day/14_cuisine.jpg",
+    "emotion": "Souriant",
+    "portrait": "assets/personnages-authentiques/hugo_smiling.png",
+    "companion": "assets/personnages-authentiques/mother_neutral.png",
+    "description": "Un moment de calme."
+  },
+  {
+    "title": "En ville",
+    "location": "Rue en soirée",
+    "background": "assets/another-day/05_rue_soir.jpg",
+    "emotion": "Neutre",
+    "portrait": "assets/personnages-authentiques/hugo_neutral.png",
+    "companion": "assets/personnages-authentiques/baker_neutral.png",
+    "description": "Le quotidien, sans effet dramatique."
+  }
+]
