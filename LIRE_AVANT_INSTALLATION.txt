@@ -1,0 +1,30 @@
+ANS PRODUCTION — STORY EDITION V100000000000000000000000000
+
+MISE À JOUR SANS PERDRE PAGES CMS
+
+Ce ZIP ne remplace PAS app.js, cms-loader.js, .pages.yml, content/site.json,
+ni les contenus et images existants de ton site.
+
+FICHIERS À ENVOYER À LA RACINE DU DÉPÔT GitHub :
+1. index.html (remplace)
+2. another-day.html (remplace)
+3. story-upgrade.css (nouveau)
+4. story-upgrade.js (nouveau)
+5. another-day-trailer-premium.mp4 (nouveau)
+
+Sur GitHub : Code -> Add file -> Upload files -> dépose les 5 fichiers
+décompressés -> Commit changes. Important : ne téléverse pas le ZIP tel quel.
+
+LIEN DE TEST après publication :
+https://anisleouf.github.io/ans-production-site/
+https://anisleouf.github.io/ans-production-site/another-day.html
+
+Sur iPhone : le son de la vidéo démarre uniquement lorsque l'utilisateur
+appuie sur Lecture et active le haut-parleur du lecteur. Pas d'autoplay.
+
+Le trailer est un montage à partir des visuels du dossier ANS Production
+et non des captures de gameplay. Le jeu reste annoncé en développement.
+La vidéo embarquée provient du fichier MP4 compatible iPhone déjà monté.
+
+NOTE : cette livraison est un patch préparé sur la base de l'archive
+ANS Production du projet, et non une modification déjà en ligne.
