@@ -35,5 +35,6 @@
   "showFeelings": true,
   "showGallery": true,
   "showEnding": true,
-  "contactEndpoint": "https://formspree.io/f/mjyyjyno"
+  "contactEndpoint": "https://formspree.io/f/mjyyjyno",
+  "homeButtonText": "youtube"
 }
