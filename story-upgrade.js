@@ -1035,3 +1035,196 @@
   refresh();
 
 })();
+
+/* ANOTHER DAY — MISE À JOUR DES ÉMOTIONS PIXEL ART */
+
+(() => {
+  "use strict";
+
+  const hugo = "assets/personnages-pixel/hugo/idle.png";
+
+  const emotions = [
+    ["Pensif", "Une journée qui commence autrement.", "#78aec3", "···"],
+    ["Souriant", "Un instant qui fait du bien.", "#e2c58b", "✦"],
+    ["Gêné", "Les mots qui ne viennent pas.", "#d59dad", "♡"],
+    ["Triste", "Les silences pèsent parfois.", "#7993ba", "—"],
+    ["Surpris", "Ce qu’on n’avait pas vu venir.", "#83b9b7", "!"],
+    ["Déterminé", "Choisir de faire un pas.", "#e7a073", "↑"],
+    ["Heureux", "La lumière revient, parfois.", "#e5ce74", "✳"],
+    ["Neutre", "Le quotidien, simplement.", "#a6b5b8", "○"]
+  ];
+
+  const style = document.createElement("style");
+
+  style.textContent = `
+    .ans-pixel-deck .emotion-art {
+      transition: background .35s ease;
+    }
+
+    .ans-pixel-deck .emotion-portrait {
+      image-rendering: pixelated;
+      object-fit: contain;
+      object-position: center bottom;
+      filter: drop-shadow(0 18px 26px rgba(0,0,0,.38));
+    }
+
+    .ans-pixel-deck .ans-pixel-mood {
+      position: absolute;
+      right: 24px;
+      top: 23px;
+      z-index: 3;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.3);
+      background: rgba(14,24,29,.56);
+      color: #f7e9d9;
+      font-size: 24px;
+      font-weight: 600;
+      pointer-events: none;
+    }
+
+    @media (max-width: 600px) {
+      .ans-pixel-deck .ans-pixel-mood {
+        right: 12px;
+        top: 12px;
+        width: 38px;
+        height: 38px;
+        font-size: 19px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ans-pixel-deck .emotion-art {
+        transition: none;
+      }
+    }
+  `;
+
+  document.head.appendChild(style);
+
+  function install(deck) {
+    if (deck.dataset.ansPixelEmotions === "1") return;
+
+    const portrait = deck.querySelector(".emotion-portrait");
+    const art = deck.querySelector(".emotion-art");
+
+    if (!portrait || !art) return;
+
+    deck.dataset.ansPixelEmotions = "1";
+    deck.classList.add("ans-pixel-deck");
+
+    const symbol = document.createElement("span");
+    symbol.className = "ans-pixel-mood";
+    symbol.setAttribute("aria-hidden", "true");
+    art.appendChild(symbol);
+
+    const heading = deck.querySelector(".emotion-top .smallcaps");
+    if (heading) {
+      heading.textContent = "HUGO · HUIT ÉTATS NARRATIFS";
+    }
+
+    const proof = deck.querySelector(".emotion-mini");
+    if (proof) {
+      proof.textContent = "PORTRAIT PIXEL ART · ANOTHER DAY";
+    }
+
+    const label = deck.querySelector("[data-emotion-label]");
+    if (label) label.setAttribute("aria-live", "polite");
+
+    let index = 0;
+
+    function show(next) {
+      index = (next + emotions.length) % emotions.length;
+
+      const [name, description, tint, mark] = emotions[index];
+
+      if (portrait.getAttribute("src") !== hugo) {
+        portrait.src = hugo;
+      }
+
+      portrait.alt = `Hugo en pixel art — ambiance ${name}`;
+
+      art.style.background =
+        `radial-gradient(circle at 50% 55%, ${tint}55, transparent 58%), #1a2b30`;
+
+      symbol.textContent = mark;
+
+      if (label) label.textContent = name;
+
+      const caption = deck.querySelector("[data-emotion-caption]");
+      if (caption) caption.textContent = description;
+
+      const number = String(index + 1).padStart(2, "0");
+
+      const current = deck.querySelector("[data-emotion-current]");
+      if (current) current.textContent = number;
+
+      const counter = deck.querySelector(".emotion-index");
+      if (counter) {
+        counter.textContent = `ÉTAT ${number} — 08`;
+      }
+
+      deck.querySelectorAll("[data-emotion-tab]").forEach((button, i) => {
+        button.setAttribute("aria-pressed", String(i === index));
+      });
+    }
+
+    // Empêcher les anciens boutons d'afficher les images cassées.
+    deck.addEventListener("click", event => {
+      const button = event.target.closest("button");
+
+      if (!button || !deck.contains(button)) return;
+
+      let next;
+
+      if (button.hasAttribute("data-emotion-prev")) {
+        next = index - 1;
+      } else if (button.hasAttribute("data-emotion-next")) {
+        next = index + 1;
+      } else if (button.hasAttribute("data-emotion-tab")) {
+        next = Number(button.dataset.emotionTab);
+      } else {
+        return;
+      }
+
+      event.preventDefault();
+      event.stopImmediatePropagation();
+
+      show(next);
+    }, true);
+
+    show(0);
+  }
+
+  function refresh() {
+    document.querySelectorAll("[data-emotion-deck]").forEach(install);
+
+    document.querySelectorAll(".feelings-head > p").forEach(p => {
+      if (p.dataset.ansPixelCaption) return;
+
+      p.dataset.ansPixelCaption = "1";
+      p.textContent =
+        "Découvre huit ambiances de l’histoire d’Hugo à travers son nouveau portrait pixel art.";
+    });
+  }
+
+  const app = document.getElementById("app");
+  if (!app) return;
+
+  new MutationObserver(refresh).observe(app, {
+    childList: true,
+    subtree: true
+  });
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", refresh, {
+      once: true
+    });
+  }
+
+  refresh();
+})();
+
