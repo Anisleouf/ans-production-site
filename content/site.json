@@ -36,5 +36,8 @@
   "showGallery": true,
   "showEnding": true,
   "contactEndpoint": "https://formspree.io/f/mjyyjyno",
-  "homeButtonText": "youtube"
+  "homeButtonText": "youtube",
+  "backgroundColor": "creme",
+  "buttonColor": "rose",
+  "fontStyle": "moderne"
 }
