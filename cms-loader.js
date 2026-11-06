@@ -261,3 +261,94 @@
     start(backup);
   });
 })();
+/* Logo officiel Another Day — ajout sans téléchargement */
+(() => {
+  const root = document.getElementById('app');
+  if (!root) return;
+
+  const logo = `<svg class="ad-wordmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 104" role="img" aria-label="Another Day — logo officiel pixel art"><path fill="#f7f6ee" fill-rule="evenodd" d="M249 46h-18v4h13l2 2v2l-1 1h-9l-2 4h-3v10l-1 1h-2l-2 4h-4v3l-1 1h-9l-1 1v4l-1 1h-11v4h12v-4l1 -1h9v-4l1 -1h5v-4l1 -1h3v-2l1 -1h20v-20h-2l-1 -1z M238 61l1 -1h6l1 1v3l-1 1h-6l-1 -1z M149 46v3l-2 1v16l2 1v3h15l1 1v4h4l1 1v3h4l1 1v4l1 1h4l1 1v4h6l1 1v5h5v-5h-5l-1 -1v-4h-5l-1 -1v-5h-5l-1 -1v-4h-5l-1 -1v-3l1 -1h5v-16l1 -1h10v-7h-17v23l-1 1h-2l-1 -1v-5h-12l-1 -1v-3l1 -1h12v-9h-2l-1 -1v-3z M152 51l1 -1h5l1 1v3l-1 1h-5l-1 -1z M84 46v23h13v-2l1 -1h2v-16l-2 -1v-3z M90 53h4l1 1v8l-1 1h-4l-1 -1v-8z M256 45v21h3l2 3h9l1 1v3l-1 1h-14v8h16v-4l1 -1h6v-32h-7v14l-2 2h-6l-1 -1v-14l-1 -1z M28 38v35h8v-11l1 -1h12l1 1v11h11l2 4h5l1 1v4h5l1 1v5h7l1 -1v-4h-7l-1 -1v-4h-6l-1 -1v-3h-5l-1 -1v-3l1 -1h5v-14l1 -1h4l1 1v14h5v-5l1 -1v-12l-3 -2v-3h-15v20l-1 1h-2l-1 -1v-29h-22l-1 1z M36 44l1 -1h12l1 1v10l-1 1h-12l-1 -1z M104 36v30h1l2 3h11v-7h-6l-1 -1v-7l1 -1h6v-7h-6l-1 -1v-8l-1 -1z M227 36h-4l-2 -5h-27v5l-1 1h-6l-1 -1v-5h-4l-1 -1v-4h-5l-1 -1v-4h-4l-1 -1v-4l-1 -1h-4v5l-1 1h-5v4l-1 1h-4v4l-1 1h-4l-1 1v4l-1 1h-5v4l-1 1h-4v3l-1 1h-5l-2 -2v-9l1 -1v-2l-1 -1h-11l-1 1v4l1 1h4l1 1v35l-1 1h-5v3l-1 1h-4l-2 5h-5v3l-1 1h-5v4l1 1h4l1 -1v-4l1 -1h5v-3l1 -1h4v-3l1 -1h5v-4l1 -1h5v-2l2 -3v-10l-1 -1v-2l2 -2h4l1 1v15h7v-19h-2l-2 -3l3 -2v-3l1 -1h5v-4l1 -1h4v-4l1 -1h5v-5l1 -1h4v-4l1 -1h4l1 1v4h5l1 1v5h4l1 1v4l1 1h4l1 1v3h11l1 1v21l-1 1h-4v6h28v-3l1 -1h4z M207 39h11l1 1v22l-1 1h-11l-1 -1v-22z"/><path fill="#40c423" fill-rule="evenodd" d="M204 88h-6v3l-1 1h-4v3l-1 1h-5v6h5v-4l1 -1h5v-3l1 -1h5z M82 87v5l1 1h4l2 4h4l1 1v4h6v-5l-1 -1h-3l-1 -1v-3h-6l-1 -1v-4z M272 77v6l1 1h5l1 1v4h5l1 1v4l1 1h2l1 -1l2 1l1 -1v-6h-6l-1 -1v-4h-5l-2 -2l1 -1l-1 -3z M49 18h-7v5l-1 1h-7v5l-1 1h-6v6h7v-5l1 -1h7v-5l1 -1h6z M169 2h-6v5l-1 1h-4v6h5v-5l1 -1h5z"/></svg>`;
+
+  const css = document.createElement('style');
+  css.textContent = `
+    .ad-logo-title {
+      font-size: 0!important;
+      letter-spacing: 0!important;
+      line-height: 1!important;
+    }
+    .ad-logo-title svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .feature-title.ad-logo-title { width: min(62vw,760px); }
+    .game-display.ad-logo-title {
+      width: min(76vw,850px);
+      margin: 22px 0;
+    }
+    .catalog-body h2.ad-logo-title {
+      width: 100%;
+      max-width: 440px;
+      margin: 30px 0;
+    }
+    .studio-fullbleed-text h2.ad-logo-title {
+      width: min(55vw,540px);
+      margin: 20px 0;
+    }
+    .ad-logo-home {
+      width: min(45vw,350px);
+      margin: 12px 0 16px;
+    }
+    .ad-logo-home svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 5px 15px #0006);
+    }
+    @media (max-width:700px) {
+      .feature-title.ad-logo-title,
+      .game-display.ad-logo-title { width: 90%; }
+      .ad-logo-home { width: min(65vw,290px); }
+      .studio-fullbleed-text h2.ad-logo-title {
+        width: min(75vw,440px);
+      }
+    }
+  `;
+  document.head.append(css);
+
+  function apply() {
+    for (const selector of [
+      '.feature-section .feature-title',
+      '.game-hero .game-display',
+      '.games-catalog .catalog-body h2',
+      '.studio-fullbleed-text h2'
+    ]) {
+      const el = root.querySelector(selector);
+      if (el && !el.querySelector('svg.ad-wordmark')) {
+        el.classList.add('ad-logo-title');
+        el.innerHTML = logo;
+      }
+    }
+
+    const eyebrow = root.querySelector(
+      '.ans-story-hero .ans-hero-copy .ans-eyebrow'
+    );
+    if (eyebrow && !root.querySelector('.ad-logo-home')) {
+      const div = document.createElement('div');
+      div.className = 'ad-logo-home';
+      div.innerHTML = logo;
+      eyebrow.after(div);
+    }
+  }
+
+  let scheduled = false;
+  new MutationObserver(() => {
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(() => {
+      scheduled = false;
+      apply();
+    });
+  }).observe(root, { childList: true, subtree: true });
+
+  apply();
+})();
